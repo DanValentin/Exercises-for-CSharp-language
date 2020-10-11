@@ -12,13 +12,27 @@ namespace Exercise_CSharp
         {
             Exercise_1();
             Exercise_2();
+            Exercise_3();
+        }
+
+        static void Exercise_3()
+        {
+            Console.WriteLine("Introduceti un caracter in consola: ");
+            var caracterIntrodus = Console.ReadLine();
+            int result = 0;
+
+            if (int.TryParse(caracterIntrodus, out result))
+            {
+                Console.WriteLine($"Caracterul {result} pe care l-ai introdus este cifra!”");              
+            }
+            else
+                Console.WriteLine($"Caracterul {result} pe care l-ai introdus nu este cifra!");
         }
 
         static void Exercise_2()
         {
             Console.WriteLine("Introduceti un cuvant in consola: ");
             var cuvantulIntrodus = Console.ReadLine();
-            //int value = Convert.ToInt32(numarulIntrodus);
 
             if (cuvantulIntrodus.Equals("automation"))
             {
