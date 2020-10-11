@@ -13,6 +13,21 @@ namespace Exercise_CSharp
             Exercise_1();
             Exercise_2();
             Exercise_3();
+            Exercise_4();
+        }
+        static void Exercise_4()
+        {
+            Console.WriteLine("Introduceti un numar: ");
+            var numarulIntrodus = Console.ReadLine();
+            int value = Convert.ToInt32(numarulIntrodus);
+
+            if (value < 20)
+            {
+                value = value + 5;
+                Console.WriteLine($"Numarul final este: {value}");
+            }
+            else
+                Console.WriteLine("Numarul este mai mare ca 20");
         }
 
         static void Exercise_3()
