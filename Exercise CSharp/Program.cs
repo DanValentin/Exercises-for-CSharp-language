@@ -11,6 +11,21 @@ namespace Exercise_CSharp
         static void Main(string[] args)
         {
             Exercise_1();
+            Exercise_2();
+        }
+
+        static void Exercise_2()
+        {
+            Console.WriteLine("Introduceti un cuvant in consola: ");
+            var cuvantulIntrodus = Console.ReadLine();
+            //int value = Convert.ToInt32(numarulIntrodus);
+
+            if (cuvantulIntrodus.Equals("automation"))
+            {
+                Console.WriteLine("Cuvantul pe care tu l-ai citit este “automation");
+            }
+            else
+                Console.WriteLine("Este un alt cuvant");
         }
 
         static void Exercise_1()
