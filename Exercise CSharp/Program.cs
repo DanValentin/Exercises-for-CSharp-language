@@ -21,6 +21,21 @@ namespace Exercise_CSharp
             Exercise_9();
             Exercise_10();
             Exercise_11();
+            Exercise_12();
+        }
+
+        static void Exercise_12()
+        {
+            Console.WriteLine("Introduceti un numar: ");
+            var numarulIntrodus = Console.ReadLine();
+            int value = Convert.ToInt32(numarulIntrodus);
+
+            if (value >= 0)
+            {
+                Console.WriteLine($"Numarul  {value} este pozitiv.");
+            }
+            else
+                Console.WriteLine($"Numarul {value} este negativ!.");
         }
 
         static void Exercise_11()
