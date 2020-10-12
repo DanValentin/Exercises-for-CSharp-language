@@ -16,6 +16,19 @@ namespace Exercise_CSharp
             Exercise_4();
             Exercise_5();
             Exercise_6();
+            Exercise_7();
+        }
+
+        static void Exercise_7()
+        {
+            Console.WriteLine("Introduceti un numar: ");
+            var numarulIntrodus = Console.ReadLine();
+            int value = Convert.ToInt32(numarulIntrodus);
+
+            if(value % 2 == 0)
+            {
+                Console.WriteLine($"Numarul {value} este numar par");
+            }
         }
 
         static void Exercise_6()
