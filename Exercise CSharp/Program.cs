@@ -18,7 +18,22 @@ namespace Exercise_CSharp
             Exercise_6();
             Exercise_7();
             Exercise_8();
+            Exercise_9();
         }
+
+        static void Exercise_9()
+        {
+            Console.WriteLine("Introduceti un cuvant in consola: ");
+            var cuvantulIntrodus = Console.ReadLine();
+
+            if (cuvantulIntrodus.Equals("automation"))
+            {
+                Console.WriteLine("Cuvantul pe care tu l-ai citit este “automation");
+            }
+            else
+                Console.WriteLine("Cuvantul pe care l-ai citit nu este “automation");
+        }
+
 
         static void Exercise_8()
         {
