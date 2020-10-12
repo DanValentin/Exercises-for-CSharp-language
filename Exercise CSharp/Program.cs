@@ -22,6 +22,25 @@ namespace Exercise_CSharp
             Exercise_10();
             Exercise_11();
             Exercise_12();
+            Exercise_13();
+        }
+
+        static void Exercise_13()
+        {
+            Console.WriteLine("Introduceti un numar: ");
+            var numarulIntrodus = Console.ReadLine();
+            int value = Convert.ToInt32(numarulIntrodus);
+
+            if (value <= 20)
+            {
+                Console.WriteLine($"Numarul {value} este mai mic de 20!");
+            }
+            else if (value >= 40)
+            {
+                Console.WriteLine($"Numarul {value} este mai mare de 40!");
+            }
+            else
+                Console.WriteLine("Numarul este intre 20 si 40!");
         }
 
         static void Exercise_12()
