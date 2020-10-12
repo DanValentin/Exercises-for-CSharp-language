@@ -23,6 +23,21 @@ namespace Exercise_CSharp
             Exercise_11();
             Exercise_12();
             Exercise_13();
+            Exercise_14();
+        }
+
+        static void Exercise_14()
+        {
+            Console.WriteLine("Introduceti un numar: ");
+            var numarulIntrodus = Console.ReadLine();
+            int value = Convert.ToInt32(numarulIntrodus);
+
+            if (value % 2 == 0)
+            {
+                Console.WriteLine($"Numarul {value} este numar par");
+            }
+            else
+                Console.WriteLine("Numarul *numar* pe care l’ati introdus este impar!.");
         }
 
         static void Exercise_13()
