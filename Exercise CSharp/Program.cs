@@ -19,6 +19,21 @@ namespace Exercise_CSharp
             Exercise_7();
             Exercise_8();
             Exercise_9();
+            Exercise_10();
+        }
+
+        static void Exercise_10()
+        {
+            Console.WriteLine("Introduceti un caracter in consola: ");
+            var caracterIntrodus = Console.ReadLine();
+            int result = 0;
+
+            if (int.TryParse(caracterIntrodus, out result))
+            {
+                Console.WriteLine($"Caracterul {result} pe care l-ai introdus este cifra!”");
+            }
+            else
+                Console.WriteLine($"Caracterul {result} pe care l-ai introdus nu este cifra!");
         }
 
         static void Exercise_9()
