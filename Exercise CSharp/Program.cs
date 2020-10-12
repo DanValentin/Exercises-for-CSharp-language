@@ -20,6 +20,25 @@ namespace Exercise_CSharp
             Exercise_8();
             Exercise_9();
             Exercise_10();
+            Exercise_11();
+        }
+
+        static void Exercise_11()
+        {
+            Console.WriteLine("Introduceti un numar: ");
+            var numarulIntrodus = Console.ReadLine();
+            int value = Convert.ToInt32(numarulIntrodus);
+
+            if (value <= 20)
+            {
+                value = value + 5;
+                Console.WriteLine($"Numarul final este: {value}");
+            }
+            else
+            {
+                value = value - 5;
+                Console.WriteLine($"Numarul este {value}");
+            }
         }
 
         static void Exercise_10()
