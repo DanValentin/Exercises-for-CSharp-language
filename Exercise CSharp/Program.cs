@@ -27,6 +27,55 @@ namespace Exercise_CSharp
             Exercise_16();
             Exercise_17();
             Exercise_18();
+            Exercise_19();
+
+        }
+
+        static void Exercise_19()
+        {
+            int numarulUnu;
+            int numarulDoi;
+            string operatia;
+            ConsoleKeyInfo status;
+            float answer;
+
+            while (true)
+            {
+                Console.Write("Primul numar: ");
+                numarulUnu = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Numarul doi: ");
+                numarulDoi = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Ce operatie doriti sa faceti? \n (+, -, /, *): ");
+                operatia = Console.ReadLine();
+
+                switch (operatia)
+                {
+                    case "-":
+                        answer = numarulUnu - numarulDoi;
+                        break;
+                    case "+":
+                        answer = numarulUnu + numarulDoi;
+                        break;
+                    case "/":
+                        answer = numarulUnu / numarulDoi;
+                        break;
+                    case "*":
+                        answer = numarulUnu * numarulDoi;
+                        break;
+                    default:
+                        answer = 0;
+                        break;
+                }
+
+                Console.WriteLine(numarulUnu.ToString() + " " + operatia + " " + numarulDoi.ToString() + " = " + answer.ToString());
+                Console.WriteLine("\n\n Do You Want To Break (Y/y)");
+                status = Console.ReadKey();
+                if (status.Key == ConsoleKey.Y)
+                {
+                    break;
+                }
+                Console.Clear();
+            }
 
         }
 
