@@ -10,21 +10,46 @@ namespace Exercise_CSharp
     {
         static void Main(string[] args)
         {
-            //Exercise_1();
-            //Exercise_2();
-            //Exercise_3();
-            //Exercise_4();
-            //Exercise_5();
-            //Exercise_6();
-            //Exercise_7();
-            //Exercise_8();
-            //Exercise_9();
-            //Exercise_10();
-            //Exercise_11();
-            //Exercise_12();
-            //Exercise_13();
-            //Exercise_14();
+            Exercise_1();
+            Exercise_2();
+            Exercise_3();
+            Exercise_4();
+            Exercise_5();
+            Exercise_6();
+            Exercise_7();
+            Exercise_8();
+            Exercise_9();
+            Exercise_10();
+            Exercise_11();
+            Exercise_12();
+            Exercise_13();
+            Exercise_14();
             Exercise_16();
+            Exercise_17();
+
+        }
+        static void Exercise_17()
+        {
+            Console.WriteLine("Introduceti inaltimea in cm: ");
+            var inaltimeaInCm = Console.ReadLine();
+            int value = Convert.ToInt32(inaltimeaInCm);
+
+            if (value <= 150)
+            {
+                Console.WriteLine("Persoana miniona");
+            }
+            else if (value <= 150 && value <= 165)
+            {
+                Console.WriteLine("Persoana mica de incaltine");
+            }
+            else if (value <= 165 && value <= 175)
+            {
+                Console.WriteLine("Persona inalta");
+            }
+            else
+            {
+                Console.WriteLine("Persona foarte inalta");
+            }
         }
 
         static void Exercise_16()
