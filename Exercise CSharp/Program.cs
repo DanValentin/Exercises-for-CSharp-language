@@ -17,6 +17,19 @@ namespace Exercise_CSharp
             Exercise_5();
             Exercise_6();
             Exercise_7();
+            Exercise_8();
+        }
+
+        static void Exercise_8()
+        {
+            Console.WriteLine("Introduceti un numar: ");
+            var numarulIntrodus = Console.ReadLine();
+            int value = Convert.ToInt32(numarulIntrodus);
+
+            if(value == 20)
+            {
+                Console.WriteLine($"Numarul {value} este fix 20");
+            }
         }
 
         static void Exercise_7()
