@@ -26,8 +26,36 @@ namespace Exercise_CSharp
             Exercise_14();
             Exercise_16();
             Exercise_17();
+            Exercise_18();
 
         }
+
+        static void Exercise_18()
+        {
+            Console.WriteLine("Introduceti primul numar: ");
+            var primulNumar = Console.ReadLine();
+            int value1 = Convert.ToInt32(primulNumar);
+
+            Console.WriteLine("Introduceti numarul doi: ");
+            var numarDoi = Console.ReadLine();
+            int value2 = Convert.ToInt32(numarDoi);
+
+            Console.WriteLine("Introduceti numarul trei: ");
+            var numarTrei = Console.ReadLine();
+            int value3 = Convert.ToInt32(numarTrei);
+
+
+            int[] numbers = new int[3] { value1, value2, value3 };
+
+            Array.Sort(numbers);
+
+            foreach (int val in numbers)
+            {
+                Console.WriteLine(val);
+            }
+
+        }
+
         static void Exercise_17()
         {
             Console.WriteLine("Introduceti inaltimea in cm: ");
