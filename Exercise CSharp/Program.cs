@@ -10,20 +10,40 @@ namespace Exercise_CSharp
     {
         static void Main(string[] args)
         {
-            Exercise_1();
-            Exercise_2();
-            Exercise_3();
-            Exercise_4();
-            Exercise_5();
-            Exercise_6();
-            Exercise_7();
-            Exercise_8();
-            Exercise_9();
-            Exercise_10();
-            Exercise_11();
-            Exercise_12();
-            Exercise_13();
-            Exercise_14();
+            //Exercise_1();
+            //Exercise_2();
+            //Exercise_3();
+            //Exercise_4();
+            //Exercise_5();
+            //Exercise_6();
+            //Exercise_7();
+            //Exercise_8();
+            //Exercise_9();
+            //Exercise_10();
+            //Exercise_11();
+            //Exercise_12();
+            //Exercise_13();
+            //Exercise_14();
+            Exercise_16();
+        }
+
+        static void Exercise_16()
+        {
+            Console.WriteLine("Introduceti ora: ");
+            var oraIntrodusa = Console.ReadLine();
+            double value = Convert.ToDouble(oraIntrodusa);
+
+            if (value <= 12)
+            {
+                Console.WriteLine("Buna dimineata!");
+            }
+            else if (value <= 17)
+            {
+                Console.WriteLine("Buna ziua!");
+            }
+            else
+                Console.WriteLine("Buna seara!");
+
         }
 
         static void Exercise_14()
